@@ -2,13 +2,43 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Descifra el Enigma</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
+  <body background="./images/parchment-1425941.jpg" id="fondo">
+    <div id="inicio" style="display:block;">
+      <h1 id="titulo1">Descifra el Enigma</h1>
+      <p id="bienvenida">¡Bienvenido a <b>Descifra el Enigma</b>! <br /> Un lugar donde podrás cifrar y descifrar <br/> mensajes secretos</p>
+      <h2 id="escoger">¿Qué deseas hacer?</h2>
+      <button id="cipher" class="boton" type="button">Crear mensaje secreto</button>
+      <button id="decipher" class="boton" type="button">Descifrar mensaje secreto</button>
     </div>
+
+<!-- crear mensaje secreto-->
+<div id="paginaCifrado" style="display:none;">
+  <h1 id="titulo">Crear mensaje secreto</h1>
+    <label id="etiqueta" class="mensajecm">Escribe tu mensaje</label><br/>
+    <textarea class="box" id="box1" placeholder="Solo letras..."></textarea><br />
+    <label id="etiqueta" class="numerocm">Selecciona un número del 1 al 11</label><br/>
+    <input type="number" id="select" class="box" min="1" max="11"/><br/>
+    <button id="cifrarMensaje" class="boton" type="button"> Cifrar </button></br>
+    <label id="etiqueta" class="cifrado">Este es tu mensaje secreto:</label><br/>
+    <textarea class="box" id="resultado"></textarea><br />
+    <button id="volver" class="boton" type="button"> Volver </button></br>
+</div>
+
+<!-- descifrar mensaje-->
+<div id="paginaDescifrado" style="display: none;">
+  <h1 id="titulo">Descifrar mensaje secreto</h1>
+    <label id="etiqueta" class="mensajedm">Escribe tu mensaje</label><br/>
+    <textarea class="box" id="box2" placeholder="Solo letras..."></textarea><br />
+    <label id="etiqueta" class="numerodm">Selecciona un número del -1 al -11</label><br/>
+    <input type="number" id="select2" class="box" min="-11" max="0"/><br/>
+    <button id="descifrarMensaje" class="boton" type="button"> Descifrar </button><br/>
+    <label id="etiqueta" class="descifrado">Este es tu mensaje secreto:</label><br/>
+    <textarea class="box" id="resultado2"></textarea><br />
+    <button id="volver1" class="boton" type="button"> Volver </button></br>
+</div>
     <script src="index.js" type="module"></script>
   </body>
 </html>
