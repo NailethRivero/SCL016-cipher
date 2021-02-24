@@ -3,6 +3,7 @@ import cipher from './cipher.js';
 console.log(cipher);
 let cypher = document.getElementById("cipher");
 cypher.addEventListener("click", function(){
+document.getElementById("inicio");
 inicio.style.display ="none";
 let paginaCifrado = document.getElementById("paginaCifrado");
 paginaCifrado.style.display="block";
@@ -11,12 +12,14 @@ paginaCifrado.style.display="block";
 let decipher = document.getElementById("decipher");
 let paginaDescifrado = document.getElementById("paginaDescifrado");
 decipher.addEventListener("click", function(){
+document.getElementById("inicio")
 inicio.style.display ="none";
 paginaDescifrado.style.display ="block";
 });
 
 let volver = document.getElementById('volver');
 volver.addEventListener("click", function(){
+document.getElementById("paginaCifrado")
     paginaCifrado.style.display = "none";
 let inicio = document.getElementById("inicio");
 inicio.style.display = "block";

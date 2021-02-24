@@ -16,28 +16,28 @@
 
 <!-- crear mensaje secreto-->
 <div id="paginaCifrado" style="display:none;">
-  <h1 id="titulo">Crear mensaje secreto</h1>
-    <label id="etiqueta" class="mensajecm">Escribe tu mensaje</label><br/>
+  <h1 class="titulo">Crear mensaje secreto</h1>
+    <label id="mensajecm" class="etiqueta">Escribe tu mensaje</label><br/>
     <textarea class="box" id="box1" placeholder="Solo letras..."></textarea><br />
-    <label id="etiqueta" class="numerocm">Selecciona un número del 1 al 11</label><br/>
-    <input type="number" id="select" class="box" min="1" max="11"/><br/>
-    <button id="cifrarMensaje" class="boton" type="button"> Cifrar </button></br>
-    <label id="etiqueta" class="cifrado">Este es tu mensaje secreto:</label><br/>
+    <label id="numerocm" class="etiqueta">Selecciona un número del 1 al 6</label><br/>
+    <input type="number" id="select" class="box" min="1" max="6"/><br/>
+    <button id="cifrarMensaje" class="boton" type="button"> Cifrar </button><br/>
+    <label id="cifrado" class="etiqueta">Este es tu mensaje secreto:</label><br/>
     <textarea class="box" id="resultado"></textarea><br />
-    <button id="volver" class="boton" type="button"> Volver </button></br>
+    <button id="volver" class="boton" type="button"> Volver </button><br/>
 </div>
 
 <!-- descifrar mensaje-->
 <div id="paginaDescifrado" style="display: none;">
-  <h1 id="titulo">Descifrar mensaje secreto</h1>
-    <label id="etiqueta" class="mensajedm">Escribe tu mensaje</label><br/>
+  <h1 class="titulo">Descifrar mensaje secreto</h1>
+    <label id="mensajedm" class="etiqueta">Escribe tu mensaje</label><br/>
     <textarea class="box" id="box2" placeholder="Solo letras..."></textarea><br />
-    <label id="etiqueta" class="numerodm">Selecciona un número del -1 al -11</label><br/>
-    <input type="number" id="select2" class="box" min="-11" max="0"/><br/>
+    <label id="numerodm" class="etiqueta">Selecciona un número del 1 al 6</label><br/>
+    <input type="number" id="select2" class="box" min="1" max="6"/><br/>
     <button id="descifrarMensaje" class="boton" type="button"> Descifrar </button><br/>
-    <label id="etiqueta" class="descifrado">Este es tu mensaje secreto:</label><br/>
+    <label id="descifrado" class="etiqueta">Este es tu mensaje secreto:</label><br/>
     <textarea class="box" id="resultado2"></textarea><br />
-    <button id="volver1" class="boton" type="button"> Volver </button></br>
+    <button id="volver1" class="boton" type="button"> Volver </button><br/>
 </div>
     <script src="index.js" type="module"></script>
   </body>
