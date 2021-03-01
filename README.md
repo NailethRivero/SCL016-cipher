@@ -6,15 +6,4 @@ Creo que esta app resuelve las necesidades del usuario porque lograrían el obje
 
 - Al iniciar el proyecto, tuve que cambiar el diseño de la aplicación porque al testearlo con diferentes personas, me hicieron saber que el diseño no era el más adecuado. 
 
-- Diseño en papel:
-.src/images/denpapel.jpg
 
-- Primer diseño:
-.src/images/D1.jpg
-.src/images/D1.1.jpg
-.src/images/D1.2.jpg
-
-- Segundo diseño:
-.src/images/D2.jpg
-.src/images/D2.1.jpg
-.src/images/D2.2.jpg
